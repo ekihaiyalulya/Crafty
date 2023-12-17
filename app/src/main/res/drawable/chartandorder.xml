@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- button_bg.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Shape -->
+    <item>
+        <shape>
+            <solid android:color="#80CCCCCC" />
+
+        </shape>
+    </item>
+
+    <!-- Shadow -->
+    <item android:right="1dp" android:left="1dp" android:top="2dp" android:bottom="2dp">
+        <shape>
+            <solid android:color="#FFFFFF" /> <!-- Warna bayangan (dengan tingkat transparansi) -->
+
+        </shape>
+    </item>
+</layer-list>
