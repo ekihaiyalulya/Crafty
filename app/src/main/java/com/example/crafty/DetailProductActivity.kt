@@ -13,7 +13,7 @@ class DetailProductActivity : AppCompatActivity() {
         val arrow_left: ImageButton = findViewById(R.id.arrow_left)
 
         arrow_left.setOnClickListener {
-            startActivity(Intent(this@DetailProductActivity, HomeActivity::class.java))
+            startActivity(Intent(this@DetailProductActivity, MainActivity::class.java))
         }
     }
 }

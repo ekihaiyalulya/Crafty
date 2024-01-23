@@ -12,11 +12,12 @@
 
     <fragment
         android:id="@+id/navigation_chat"
-        android:name="com.example.crafty.ui.chat.ChatFragment"
-        tools:layout="@layout/fragment_chat" />
+        android:name="com.example.crafty.ui.profile.ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/navigation_chart"
         android:name="com.example.crafty.ui.chart.ChartFragment"
         tools:layout="@layout/fragment_chart" />
+
 </navigation>

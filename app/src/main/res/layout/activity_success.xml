@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuccessActivity">
+
+    <LinearLayout
+        android:background="#FFFFFFFF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:fillViewport="true"
+            android:id="@+id/rksc2nb4pds"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFFFF"
+            android:paddingHorizontal="11dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/ra1t8bk0nrr7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingTop="28dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginTop="150dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ri7jlowluwl"
+                        android:layout_width="match_parent"
+                        android:layout_height="235dp"
+                        android:layout_marginHorizontal="106dp"
+                        android:layout_marginBottom="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/done" />
+
+                    <TextView
+                        android:id="@+id/rcnf4m001tp9"
+                        android:layout_width="187dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="105dp"
+                        android:layout_marginBottom="14dp"
+                        android:text="Checkout Anda Berhasil!"
+                        android:textColor="#D27C17"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rja79gay58q"
+                        android:layout_width="231dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="90dp"
+                        android:layout_marginBottom="30dp"
+                        android:text="Selamat produk Anda akan diproses."
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                    <RelativeLayout
+                        android:id="@+id/buttonDone"
+                        android:layout_width="153dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/buttonorder"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Kembali"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@
 <!-- activity_login.xml -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
@@ -31,53 +32,52 @@
         android:textColor="#000000"
         android:textSize="18sp"/>
 
-    <EditText
-        android:id="@+id/editTextEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/welcomeTextView"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:background="@drawable/edit_text_background"
-        android:hint="Email/Username"
-        android:padding="20dp"/>
-
-    <EditText
-        android:id="@+id/editTextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editTextEmail"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:background="@drawable/edit_text_background"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:padding="20dp"
-        />
-
-    <ImageView
-        android:id="@+id/frame"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_alignParentLeft="true"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTil"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="330dp"
-        android:layout_marginTop="375dp"
-        android:clipToOutline="true"
-        android:background="@drawable/view" />
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/edit_text_background">
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTil"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/emailTil"
+        android:layout_marginTop="340dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/edit_text_background">
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnLogin1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextPassword"
+        android:layout_below="@id/passwordTil"
         android:layout_marginTop="50dp"
         android:background="@drawable/button_log_bg"
         android:fontFamily="@font/poppins_bold"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
+        android:textColor="@color/white"
         android:padding="15dp"
         android:text="Login"/>
 
@@ -86,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnLogin1"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppins_medium"
         android:text="or Continue with"
@@ -138,11 +138,11 @@
         />
 
     <TextView
-        android:id="@+id/registerTextView"
+        android:id="@+id/Register1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnLogin1"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="170dp"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppins_medium"
         android:text="Not a member? Register now"

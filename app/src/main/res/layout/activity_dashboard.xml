@@ -1,0 +1,533 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFFFF"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:id="@+id/rrtrkxh6jf7h"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFFFF"
+        android:paddingVertical="41dp"
+        android:paddingHorizontal="17dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/pict_pro"
+                android:layout_marginTop="-50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/ellipse_757"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/lingkarandetail" />
+
+                <ImageButton
+                    android:id="@+id/arrow_left"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="55dp"
+                    android:background="@drawable/arrowleft" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:lineSpacingExtra="-5sp"
+                    android:text="Dashboard"
+                    android:textColor="#1D1E20"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/r90uyu73fisr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="17dp"
+                android:layout_marginBottom="12dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/profit_texts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="$"
+                        android:textColor="#2E2E2E"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/profit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="0"
+                        android:textColor="#2E2E2E"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/r80wv4shpv7k"
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="117dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Total Profit Prediction"
+                    android:textColor="#2E2E2E"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/header"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/roesdqzmmust7r"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Predict the number of orders for a week"
+                    />
+
+                <com.example.crafty.ChartView
+                    android:id="@+id/ChartView"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="400dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rbds1vhktd4m"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="23dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/r1xpuol8ibep"
+                    android:layout_width="180dp"
+                    android:layout_height="173dp"
+                    android:background="@color/cover"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="17dp"
+                    android:paddingVertical="19dp">
+
+                    <LinearLayout
+                        android:id="@+id/r92o8axcu5ya"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="17dp"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/roeqzmmust7r"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Total Sales"
+                            android:textColor="#3D3D3D"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/r8m38pjic1l8"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/visit" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/sales_texts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="$"
+                            android:textColor="#000000"
+                            android:textSize="26sp" />
+
+                        <TextView
+                            android:id="@+id/sales_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:textSize="26sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/rd9yb8i6gdpq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Total Sales Prediction"
+                        android:textColor="#656565"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+                <LinearLayout
+                    android:id="@+id/rtc65zcc92il"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/order"
+                    android:paddingVertical="20dp"
+                    android:paddingHorizontal="16dp"
+                    android:elevation="4dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/r75r9nokv6dn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="16dp"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/remqv9j2s3zn"
+                            android:textColor="#3D3D3D"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_marginEnd="4dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Total Quantity"
+                            />
+                        <ImageView
+                            android:id="@+id/r88uj7sfczot"
+                            android:layout_width="25dp"
+                            android:layout_height="23dp"
+                            android:src="@drawable/card"
+                            android:scaleType="fitXY"
+                            />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/quantity_text"
+                        android:textColor="#000000"
+                        android:textSize="26sp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="0"
+                        />
+                    <TextView
+                        android:id="@+id/rdpqco6kx6t4"
+                        android:textColor="#7C7777"
+                        android:textSize="13sp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_width="wrap_content"
+                        android:text="Total Quantity Prediction"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rle6k0165ppo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="26dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/r2nejt5ih37t"
+                    android:textColor="#2E2E2E"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_weight="1"
+                    android:text="Review"
+                    />
+                <TextView
+                    android:id="@+id/rg6avqv82q8a"
+                    android:textColor="#1F1F1F"
+                    android:textSize="11sp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="View All"
+                    />
+                <ImageView
+                    android:id="@+id/rut9o71970rp"
+                    android:layout_width="15dp"
+                    android:layout_height="7dp"
+                    android:src="@drawable/arrow"
+                    android:scaleType="fitXY"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rmf22xb3umm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/rk5q1w4z31gd"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="11dp"
+                    android:src="@drawable/ratinguser"
+                    android:scaleType="fitXY"
+                    />
+                <LinearLayout
+                    android:id="@+id/rgxxio3ub8g"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/r8vmawlf2ypx"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="9dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Susanti"
+                        android:fontFamily="@font/poppins_medium"
+                        />
+                    <TextView
+                        android:id="@+id/rp3cngf0h14"
+                        android:textColor="#000000"
+                        android:textSize="9sp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Barang sesuai gambar"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/rcgo87dy7fod"
+                    android:textColor="#000000"
+                    android:textSize="8sp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="4.0"
+                    />
+
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="60dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/rating" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/r2k0gylptcrk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="29dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/rpbqd0ldcujg"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="11dp"
+                    android:src="@drawable/roy"
+                    android:scaleType="fitXY"
+                    />
+                <LinearLayout
+                    android:id="@+id/rqmtvlc2lyr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="4dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/rjhwxuc8kf4k"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginBottom="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Roy"
+                        />
+                    <TextView
+                        android:id="@+id/rf39c5xlk13w"
+                        android:textColor="#000000"
+                        android:textSize="9sp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Admin kurang ramah"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/rcgo87dy7fods"
+                    android:textColor="#000000"
+                    android:textSize="8sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="4.0"
+                    />
+
+                <ImageView
+                    android:id="@+id/stara"
+                    android:layout_width="60dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/rating" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rm16q7fhqjxm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/rcqvxw4den8i"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="11dp"
+                    android:src="@drawable/rere"
+                    android:scaleType="fitXY"
+                    />
+                <LinearLayout
+                    android:id="@+id/rl7ai5u1sccg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="4dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/rddx72ssb4aq"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Rere"
+                        />
+                    <TextView
+                        android:id="@+id/rr324bjnl968"
+                        android:textColor="#000000"
+                        android:textSize="9sp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Barang tidak sesuai pesanan"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/rcgo87dy7foass"
+                    android:textColor="#000000"
+                    android:textSize="8sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="4.0"
+                    />
+
+                <ImageView
+                    android:id="@+id/starz"
+                    android:layout_width="60dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/rating" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

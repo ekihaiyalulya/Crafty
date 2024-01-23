@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/pict_pro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/ellipse_757"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/lingkarandetail" />
+
+                <ImageButton
+                    android:id="@+id/arrow_left"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="55dp"
+                    android:background="@drawable/arrowleft" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="45dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:lineSpacingExtra="-5sp"
+                    android:text="Cart"
+                    android:textColor="#1D1E20"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pict_pro"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/pro_img"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                         />
+
+                    <TextView
+                        android:id="@+id/nama_pro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/pro_img"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:lineSpacingExtra="-5sp"
+                        android:text="Caption1"
+                        android:textColor="#1D1E20"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/harga_pro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nama_pro"
+                        android:layout_toRightOf="@+id/pro_img"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="top"
+                        android:lineSpacingExtra="-2sp"
+                        android:text="Harga"
+                        android:textColor="#8F959E"
+                        android:textSize="12dp" />
+
+                    <ImageButton
+                        android:id="@+id/lingkaran_down"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="90dp"
+                        android:layout_below="@id/harga_pro"
+                        android:background="@drawable/bulat"
+                        android:radius="5dp" />
+
+                    <ImageButton
+                        android:id="@+id/down"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="95dp"
+                        android:layout_below="@id/harga_pro"
+                        android:background="@drawable/down"
+                        android:clipToOutline="true" />
+
+                    <TextView
+                        android:id="@+id/jumlah_pro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/harga_pro"
+                        android:layout_toRightOf="@+id/pro_img"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="top"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="0"
+                        android:textSize="16dp" />
+
+                    <ImageButton
+                        android:id="@+id/lingkaran_up"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="152dp"
+                        android:layout_below="@id/harga_pro"
+                        android:background="@drawable/bulat"
+                        android:radius="5dp" />
+
+                    <ImageButton
+                        android:id="@+id/up"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="157dp"
+                        android:layout_below="@id/harga_pro"
+                        android:background="@drawable/ups"
+                        android:clipToOutline="true" />
+
+                    <ImageButton
+                        android:id="@+id/lingkaran_trash"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_below="@id/harga_pro"
+                        android:background="@drawable/bulat"
+                        android:radius="5dp" />
+
+                    <ImageButton
+                        android:id="@+id/ikon_trash"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@id/harga_pro"
+                        android:background="@drawable/trash"
+                        android:clipToOutline="true" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:id="@+id/frame_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_cart">
+
+                <TextView
+                    android:id="@+id/delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="top"
+                    android:lineSpacingExtra="-2sp"
+                    android:text="Delivery Address"
+                    android:textColor="#1D1E20"
+                    android:textSize="22dp" />
+
+                <ImageView
+                    android:id="@+id/alamat"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_below="@id/delivery"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/alamat" />
+
+                <TextView
+                    android:id="@+id/nama_jalan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/delivery"
+                    android:layout_marginLeft="75dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="top"
+                    android:lineSpacingExtra="-2sp"
+                    android:text="Jl. Jend. Sudirman No. 112B"
+                    android:textSize="16dp"
+                    android:textColor="#1D1E20" />
+
+                <TextView
+                    android:id="@+id/kota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/delivery"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="top"
+                    android:lineSpacingExtra="-2sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Pekanbaru, Riau"
+                    android:textColor="#8F959E"
+                    android:textSize="12dp" />
+
+                <ImageButton
+                    android:id="@+id/arrow_delivery"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/kanan"
+                    android:clipToOutline="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frame_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frame_delivery">
+
+                <TextView
+                    android:id="@+id/payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="top"
+                    android:lineSpacingExtra="-2sp"
+                    android:text="Payment Method"
+                    android:textColor="#1D1E20"
+                    android:textSize="22dp" />
+
+                <ImageView
+                    android:id="@+id/dana_img"
+                    android:layout_width="44dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/payment"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/dana" />
+
+                <TextView
+                    android:id="@+id/dana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/payment"
+                    android:layout_marginLeft="75dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="top"
+                    android:lineSpacingExtra="-2sp"
+                    android:text="DANA"
+                    android:textSize="16dp"
+                    android:textColor="#1D1E20" />
+
+
+                <TextView
+                    android:id="@+id/nomor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/payment"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="24dp"
+                    android:gravity="top"
+                    android:lineSpacingExtra="-2sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="***** **** 0110"
+                    android:textColor="#8F959E"
+                    android:textSize="12dp" />
+
+                <ImageButton
+                    android:id="@+id/arrow_pay"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/kanan"
+                    android:clipToOutline="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frame_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frame_payment">
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="top"
+                    android:lineSpacingExtra="-2sp"
+                    android:text="Order Info"
+                    android:textColor="#1D1E20"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="top"
+                    android:text="Subtotal"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/sub_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="top"
+                    android:text="Rp. 25.000"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/ship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sub"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="top"
+                    android:text="Shipping cost"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/ship_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sub"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="top"
+                    android:text="Free"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ship"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="top"
+                    android:text="Total"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/total_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ship"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="top"
+                    android:text="Rp. 25.000"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/kali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ship"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="60dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="top"
+                    android:text="x"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/total_jum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ship"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="70dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="top"
+                    android:text="0"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/frame_6"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/chartandorder"
+        android:clipToOutline="true">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/buttonchat"
+                android:layout_width="153dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/buttonchat"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="BACK"
+                android:textColor="#171717"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="58dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/arrowleft" />
+
+            <RelativeLayout
+                android:id="@+id/buttonContainer"
+                android:layout_width="153dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/buttonorder"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="CHECKOUT"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/tasputih" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

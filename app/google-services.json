@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "920257720008",
+    "firebase_url": "https://crafty-9e7f8-default-rtdb.firebaseio.com",
+    "project_id": "crafty-9e7f8",
+    "storage_bucket": "crafty-9e7f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920257720008:android:8bbf0ebb74f2e5e9697ffd",
+        "android_client_info": {
+          "package_name": "com.crafty"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLS1kxkzGjzCaOx2-Kol__R_6old9EFsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920257720008:android:7cbd58a317a2a5b9697ffd",
+        "android_client_info": {
+          "package_name": "com.example.crafty"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLS1kxkzGjzCaOx2-Kol__R_6old9EFsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
